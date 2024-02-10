@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      body {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 90px;
+        background-color: rgb(132, 132, 173);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: blueviolet;
+        font-size: 1.1rem;
+      }
+      .left {
+        font-size: 1.6rem;
+      }
+      .firstsec {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px 0;
+      }
+      .firstsec div {
+        width: 30%;
+      }
+      .left2 {
+        background-color: black;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+        align-items: center;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        color: black;
+        font-size: 3rem;
+        margin: 30px;
+      }
+      .rightsection img {
+        width: 80%;
+      }
+      .lightblue {
+        color: blueviolet;
+      }
+      .portfolio{
+  padding: 50px 0;
+}
+.worklist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: visible;
+}
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.layers{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0,0,0,0.6), rgb(132, 132, 173);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* overflow: hidden; */
+  display: flex;
+}
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+  display: block;
+  transition: ease-in-out 0.5s;
+}
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6), rgb(132, 132, 173));
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 0 10px; */
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer h3{
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a{
+  margin-top: 20px;
+  color:black;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+}
+.work:hover img{
+  transform: scale(1.1);
+}
+.work:hover .layer{
+  height: 100%;
+}
+h3{
+  font-size: 30px;
+}
+.services{
+  padding: 30px 0;
+}
+.serviceslist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.serviceslist div{
+  background-color: #928989;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: transform 0.5s,background 0.5s;
+}
+.serviceslist div i{
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+.serviceslist div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.serviceslist div p{
+  font-size: 20px;
+  font-weight: 300;
+}
+.serviceslist div a{
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.serviceslist div:hover{
+  background-color:  rgb(132, 132, 173);
+  transform: translateY(-10px);
+}
+
+    </style>
+    <script src="https://kit.fontawesome.com/ae7c7af0c7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Harshith's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">projects</a></li>
+            <li><a href="">services</a></li>
+            <li><a href="">about</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi my name is <span class="lightblue">Harshith</span>
+          <div>And iam a web doveloper</div>
+        </div>
+        <div class="rightsection"><img src="dev.jpeg" alt="" /></div>
+      </section>
+    </main>
+  </div>
+  <div class="services">
+      <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="serviceslist">
+              <div>
+                  <i class="fa-solid fa-code"></i>
+                  <h2>Web design</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta quasi Lorem ipsum dolor sit amet consectobis! Et ecto assumenda aut dign,</p>
+                      <a href="#">learn more</a> 
+              </div>
+              <div>
+                  <i class="fa-solid fa-display"></i>
+                  <h2>UI/UX design</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta qu at amet voluptate exercitationem, rem modi a architecto assumenda aut dignissimos!</p>
+                  <a href="#">learn more</a>
+              </div>
+              <div>
+                  <i class="fa-brands fa-java"></i>
+                  <h2>Java development</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. at amet voluptate exercitationem, rem modi a architecto assumenda aut dignissimos!</p>
+                  <a href="#">learn more</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="portfolio">
+      <div class="container">
+          <h1 class="sub-title">My Projects</h1>
+          <div class="work-list">
+              <div class="work">
+                  <img src="mobile.jpeg" alt="">
+                  <div class="layer">
+                      <h3>Mobile application</h3>
+                      <p>Responsive mobile applications</p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="cloud.jpeg" alt="">
+                  <div class="layer">
+                      <h3>Amazon cloud</h3>
+                      <p>Intermidiate level experience of Amazon cloud</p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="aws.jpeg" alt="">
+                  <div class="layer">
+                      <h3>Cloud services</h3>
+                      <p>Intermidiate level experience of various cloud services.</p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+  </body>
+</html>
